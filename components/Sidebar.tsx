@@ -11,7 +11,7 @@ import {
   DotsCircleHorizontalIcon,
   DotsHorizontalIcon,
 } from "@heroicons/react/outline";
-import { useSession } from "next-auth/react";
+import { signOut, useSession } from "next-auth/react";
 
 const Sidebar = () => {
   const { data: session } = useSession();
@@ -42,7 +42,7 @@ const Sidebar = () => {
           alt=""
           className="h-10 w-10 rounded-full xl:mr-2.5"
         />
-        <div className="hidden xl:inline leading-5">
+        <div className="hidden xl:inline leading-5" onClick={()=>signOut()}>
           <h4 className="font-bold">{session?.user?.name}</h4>
           <p className="text-[#6e767d]">@{session?.user?.tag}</p>
         </div>

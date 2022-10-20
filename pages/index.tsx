@@ -7,8 +7,6 @@ import Login from "../components/Login";
 
 const Home: NextPage = ({ trendingResults, followResults, providers }: any) => {
   const { data: session } = useSession();
-  console.log(providers)
-  console.log(session)
 
   if (!session) {
     return (

@@ -21,3 +21,7 @@
     @apply text-[#1d9bf0] font-normal hover:underline cursor-pointer;
   }
 }
+
+* ::-webkit-scrollbar{
+  display: none;
+}
