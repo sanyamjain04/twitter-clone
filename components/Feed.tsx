@@ -13,14 +13,13 @@ import Input from "./Input";
 import Post from "./Post";
 
 const Feed = () => {
-  const [post, setPost] = useState<any>([]);
+  const [post, setPost] = useState<any[]>([]);
   useEffect(() => {
     onSnapshot(
       query(collection(db, "posts"), orderBy("timestamp", "desc")),
       (snapshot: any) => setPost(snapshot?.docs)
     );
   }, [db]);
-  console.log(post)
 
   return (
     <div className="flex-grow border-l border-r border-gray-700 max-w-2xl sm:ml-[73px] xl:ml-[370px] ">

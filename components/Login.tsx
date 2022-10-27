@@ -13,8 +13,9 @@ function Login({ providers }:any) {
         <Image
           src="https://rb.gy/ogau5a"
           width={150}
+          alt=""
           height={150}
-          objectFit="contain"
+          // objectFit="contain"
         />
 
         <div>
