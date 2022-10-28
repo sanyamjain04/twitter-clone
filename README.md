@@ -1,3 +1,11 @@
+A Twitter clone build maade with NextjS and TypeScript.
+## Screenshots
+![image](https://user-images.githubusercontent.com/107163858/198511830-b111c997-5d38-4435-8707-60fa1ae503bf.png)
+
+![image](https://user-images.githubusercontent.com/107163858/198511943-f9604a28-8ad5-4be0-af9c-d7fc3fdcb8cb.png)
+
+
+
 # Next.js + Tailwind CSS Example
 
 This example shows how to use [Tailwind CSS](https://tailwindcss.com/) [(v3.0)](https://tailwindcss.com/blog/tailwindcss-v3) with Next.js. It follows the steps outlined in the official [Tailwind docs](https://tailwindcss.com/docs/guides/nextjs).
